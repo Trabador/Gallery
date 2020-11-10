@@ -1,11 +1,10 @@
+import './Image.css'
 
-
-export default function Image({ image, setCurrent }){
+export default function Image({ image, current, setCurrent }) {
     return(
         <img 
             src={image.url} alt='' 
-            style={
-                {width:100, height:100, marginRight: 2} }
+            className = {current === image.id ? 'Image current': 'Image'}
             onClick = { () =>  setCurrent(image.id)}
         />
     )

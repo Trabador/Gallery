@@ -1,0 +1,9 @@
+.Image{
+    width: 100px; 
+    height: 100px; 
+    margin-right: 10px;
+}
+
+.current{
+    opacity: 0.4;
+}
